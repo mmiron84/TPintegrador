@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
 
-h1{
+h1 {
   font-family: 'Delicious Handrawn', cursive;
-  font-size: x-large;
+  color: #e6e6e6 !important;
+  
+}
+h2 {
+  font-family: 'Delicious Handrawn', cursive !important;
+  color: #3d3434 !important;
+  padding-top: 5rem;
+  
 }
 
 
@@ -16,6 +23,9 @@ body{
     background-color: rgb(85, 48, 190)!important;
 
 }
+.direcion{
+  color: white !important;
+}
 
 #perrofeliz{
     border-radius: 1rem;
@@ -23,6 +33,17 @@ body{
 }
 #quienesomos{
     margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#Formulario{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}
+#footer{
+  margin-top: 2rem;
+  background-color:  rgb(85, 48, 190)!important;
 }
 
 .navbar-logo{
@@ -49,6 +70,10 @@ body{
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: center;
+  }
+  #testimonio{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
   }
   #testimonio img{
     width:100px;
@@ -183,5 +208,12 @@ input[type=checkbox]:checked + label {
 color: #f00;
 font-style: normal;
 }
-  
-  
+
+#formulario{
+  padding: 5rem 5rem 5rem 5rem;
+  background-color: #7472df;
+  color:black!important;
+}
+.form-label{
+  font-size: x-large;
+}
