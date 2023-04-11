@@ -1,15 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Delicious+Handrawn&family=Nunito:wght@900&display=swap');
 
-h1 {
+h1{
   font-family: 'Delicious Handrawn', cursive;
-  color: #e6e6e6 !important;
-  
-}
-h2 {
-  font-family: 'Delicious Handrawn', cursive !important;
-  color: #3d3434 !important;
-  padding-top: 5rem;
-  
+  font-size: x-large;
 }
 
 
