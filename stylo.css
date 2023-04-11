@@ -4,6 +4,11 @@ h1{
   font-family: 'Delicious Handrawn', cursive;
   font-size: x-large;
 }
+h2{
+  font-family: 'Delicious Handrawn', cursive !important;
+  font-size: x-large;
+}
+
 
 
 body{
