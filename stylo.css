@@ -2,13 +2,18 @@
 
 h1{
   font-family: 'Delicious Handrawn', cursive;
-  font-size: x-large;
+  font-size: large;
+  color: white !important;
 }
-h2{
-  font-family: 'Delicious Handrawn', cursive !important;
-  font-size: x-large;
+.col-md-4{
+  color: white !important;
 }
 
+h2{
+  font-family: 'Delicious Handrawn', cursive !important;
+  color: black !important;
+  font-size: x-large;
+}
 
 
 body{
@@ -25,6 +30,10 @@ body{
   color: white !important;
 }
 
+.tel{
+  color: white !important;
+
+}
 #perrofeliz{
     border-radius: 1rem;
     box-shadow:  7px 7px 15px #592A08;
@@ -32,6 +41,7 @@ body{
 #quienesomos{
     margin-top: 2rem;
     margin-bottom: 2rem;
+    color: black;
 }
 
 #Formulario{
