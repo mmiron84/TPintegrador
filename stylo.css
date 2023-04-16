@@ -23,7 +23,7 @@ body{
 } 
 .navbar{
 
-    background-color: rgb(85, 48, 190)!important;
+    background-color:  #8c52ff !important;
 
 }
 .direcion{
@@ -51,7 +51,7 @@ body{
 }
 #footer{
   margin-top: 2rem;
-  background-color:  rgb(85, 48, 190)!important;
+  background-color:  #8c52ff !important;
 }
 
 .navbar-logo{
@@ -65,7 +65,7 @@ body{
     height: auto;
   }
   #menu{
-    background-color: rgb(85, 48, 190);
+    background-color:#8c52ff;
     
   }
   #carouselExample {
