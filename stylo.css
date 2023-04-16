@@ -2,7 +2,7 @@
 
 h1{
   font-family: 'Delicious Handrawn', cursive;
-  font-size: large;
+  font-size: 500% !important;
   color: white !important;
 }
 .col-md-4{
