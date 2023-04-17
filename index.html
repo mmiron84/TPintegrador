@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./stylo.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   </head>
   <body>
     <header>
@@ -152,41 +153,41 @@
 <div class="container" id="formulario">
   <h2 >Envianos tu mensaje para tener mas informacion</h2>
     <!-- FORMULARIO -->
-      <form action="">
+      <form >
          <div class="row">
               <div class="col-md-6 mb-4">
               <div class="form-outline">
-                <input type="text" id="firstName" class="form-control" />
-                <label class="form-label" style="color:black;font-size: x-large" for="firstName">Nombre</label>
+                <input type="text" id="nombres" class="form-control" />
+                <label class="form-label" style="color:black;font-size: x-large">Nombre</label>
               </div>
               </div>
               <div class="col-md-6 mb-4">
               <div class="form-outline">
-                <input type="number" id="lastName" class="form-control" />
-                <label class="form-label"style="color:black;font-size: x-large" for="lastName">Telefono</label>
+                <input type="number" id="telefono" class="form-control" />
+                <label class="form-label"style="color:black;font-size: x-large" for="Telefono">Telefono</label>
               </div>
               </div>          
               <div class="col-md-6 mb-4">
               <div class="form-outline">
                 <input type="text" id="direccion" class="form-control" />
-                <label class="form-label"style="color:black;font-size: x-large" for="lastName">Direccion</label>
+                <label class="form-label"style="color:black;font-size: x-large" for="Direccion">Direccion</label>
               </div>
               </div>
               <div class="col-md-6 mb-4">
               <div class="form-outline">
-                <input type="text" id="direccion" class="form-control" />
-                <label class="form-label" style="color:black;font-size: x-large" for="lastName">raza</label>
+                <input type="text" id="raza" class="form-control" />
+                <label class="form-label" style="color:black;font-size: x-large" for="Raza">Raza</label>
               </div>
               </div>
           </div>
           <div class="row">
             <div class="col-md-6 mb-4">
-              <select class="select">
-                <option value="1">Lavado</option>
-                <option value="2">Lavado + Corte de pelo</option>
-                <option value="3">Corte de Pelo</option>
-                <option value="4">Corte de Uñas</option>
-                <option value="5">Otros</option>
+              <select class="select" id="servicio">
+                <option value="Lavado">Lavado</option>
+                <option value="Lavado + Corte de pelo">Lavado + Corte de pelo</option>
+                <option value="Corte de Pelo">Corte de Pelo</option>
+                <option value="Corte de Uñas">Corte de Uñas</option>
+                <option value="Otros">Otros</option>
               </select>
               <label class="form-label select-label">Elija el Servicio</label>
             </div>       
@@ -198,7 +199,7 @@
                 type="radio"
                 name="inlineRadioOptions"
                 id="si"
-                value="option1"
+                value="si"
               />
               <label class="form-check-label" for="si" style="color:black;font-size: x-large">Si</label>
             </div>
@@ -207,7 +208,7 @@
                 class="form-check-input"
                 type="radio"
                 name="inlineRadioOptions"
-                id="maleGender"
+                id="no"
                 value="no"
               />
               <label class="form-check-label" for="no" style="color:black;font-size: x-large">No</label>
@@ -217,7 +218,7 @@
           <div class="row">
           <div class="col-md-6 mb-4">
             <div class="form-outline">
-              <input type="email" id="emailAddress" class="form-control" />
+              <input type="email" id="email" class="form-control" />
               <label class="form-label" style="color:black;font-size: x-large" for="emailAddress">Email</label>
             </div>
           </div>
@@ -231,7 +232,7 @@
         <div class="row">
           <div class="col-md-6">
             <div class="mt-4">
-              <input class="btn btn-warning btn-lg" type="submit" value="Submit" />
+                <button type="button" onclick="captura()">Guardar</button>
              </div>
           </div>
         </div>
