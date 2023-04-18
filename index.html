@@ -252,130 +252,75 @@
 
     <div class="container" id="formulario">
       <h2>Envianos tu mensaje para tener mas informacion</h2>
-      <!-- FORMULARIO -->
-      <form>
+       <!-- FORMULARIO -->
+       <form >
         <div class="row">
-          <div class="col-md-6 mb-4">
-            <div class="form-outline">
-              <input type="text" id="nombres" class="form-control" />
-              <label class="form-label" style="color: black; font-size: x-large"
-                >Nombre</label
-              >
+              <div class="col-md-6 mb-4">
+              <div class="form-outline">
+                <input type="text" id="nombres" class="form-control" />
+                <label class="form-label" style="color:black;font-size: x-large">Nombre</label>
+              </div>
+              </div>
+              <div class="col-md-6 mb-4">
+              <div class="form-outline">
+                <input type="number" id="telefono" class="form-control" />
+                <label class="form-label"style="color:black;font-size: x-large" for="Telefono">Telefono</label>
+              </div>
+              </div>          
+              <div class="col-md-6 mb-4">
+              <div class="form-outline">
+                <input type="text" id="direccion" class="form-control" />
+                <label class="form-label"style="color:black;font-size: x-large" for="Direccion">Direccion</label>
+              </div>
+              </div>
+              <div class="col-md-6 mb-4">
+              <div class="form-outline">
+                <input type="text" id="raza" class="form-control" />
+                <label class="form-label" style="color:black;font-size: x-large" for="Raza">Raza</label>
+              </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <h6 class="mb-2 pb-1">Elija el Servicio</h6>
+              <select class="select" id="servicio">
+                <option value="Lavado">Lavado</option>
+                <option value="Lavado + Corte de pelo">Lavado + Corte de pelo</option>
+                <option value="Corte de Pelo">Corte de Pelo</option>
+                <option value="Corte de Uñas">Corte de Uñas</option>
+                <option value="Otros">Otros</option>
+              </select>
+            </div>       
+            <div class="col-md-6 mb-4">
+            <h6 class="mb-2 pb-1">Retiro en Domicilio</h6>
+              <select class="select" id="retiro">
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+              </select>
             </div>
           </div>
-          <div class="col-md-6 mb-4">
-            <div class="form-outline">
-              <input type="number" id="telefono" class="form-control" />
-              <label
-                class="form-label"
-                style="color: black; font-size: x-large"
-                for="Telefono"
-                >Telefono</label
-              >
-            </div>
-          </div>
-          <div class="col-md-6 mb-4">
-            <div class="form-outline">
-              <input type="text" id="direccion" class="form-control" />
-              <label
-                class="form-label"
-                style="color: black; font-size: x-large"
-                for="Direccion"
-                >Direccion</label
-              >
-            </div>
-          </div>
-          <div class="col-md-6 mb-4">
-            <div class="form-outline">
-              <input type="text" id="raza" class="form-control" />
-              <label
-                class="form-label"
-                style="color: black; font-size: x-large"
-                for="Raza"
-                >Raza</label
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 mb-4">
-            <select class="select" id="servicio">
-              <option value="Lavado">Lavado</option>
-              <option value="Lavado + Corte de pelo">
-                Lavado + Corte de pelo
-              </option>
-              <option value="Corte de Pelo">Corte de Pelo</option>
-              <option value="Corte de Uñas">Corte de Uñas</option>
-              <option value="Otros">Otros</option>
-            </select>
-            <label class="form-label select-label">Elija el Servicio</label>
-          </div>
-          <div class="col-md-6 mb-4">
-            <h6 class="mb-2 pb-1">Retiro en Domicilio6</h6>
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="inlineRadioOptions"
-                id="si"
-                value="si"
-              />
-              <label
-                class="form-check-label"
-                for="si"
-                style="color: black; font-size: x-large"
-                >Si</label
-              >
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="inlineRadioOptions"
-                id="no"
-                value="no"
-              />
-              <label
-                class="form-check-label"
-                for="no"
-                style="color: black; font-size: x-large"
-                >No</label
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row">
+          <div class="row">
           <div class="col-md-6 mb-4">
             <div class="form-outline">
               <input type="email" id="email" class="form-control" />
-              <label
-                class="form-label"
-                style="color: black; font-size: x-large"
-                for="emailAddress"
-                >Email</label
-              >
+              <label class="form-label" style="color:black;font-size: x-large" for="emailAddress">Email</label>
             </div>
           </div>
           <div class="col-md-6 mb-4">
             <div class="form-outline">
               <input type="text" id="comentarios" class="form-control" />
-              <label
-                class="form-label"
-                style="color: black; font-size: x-large"
-                for="comentarios"
-                >Comentarios</label
-              >
+              <label class="form-label" style="color:black;font-size: x-large" for="comentarios">Comentarios</label>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6">
             <div class="mt-4">
-              <button type="button" onclick="captura()">Guardar</button>
-            </div>
+              <button type="button" class="btn btn-warning" onclick="captura()">Guardar</button>
+             </div>
           </div>
         </div>
-      </form>
+    </form>
       <!-- COMIENZO LLAMADO API CON AJAX -->
       <div class="container">
         <center><h1 class="well"><img src="" height="10%" alt=""> Mensajes Radom</h1></center>
@@ -491,7 +436,7 @@
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/app.js" async defer></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
 
