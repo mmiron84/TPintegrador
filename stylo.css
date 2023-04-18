@@ -76,6 +76,10 @@ body{
     margin-bottom: 2rem;
   }
 
+  #comentario{
+    padding-bottom: 3rem;
+  }
+
   #tituloLoMejorParaellos{
     margin-top: 2rem;
     margin-bottom: 2rem;

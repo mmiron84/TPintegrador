@@ -128,33 +128,33 @@
     <div class="container" id="testimonio">
       <div class="row">
         <div class="col-md-3 col-xs-12">
-         <p><img src="./img/testimonial1.jpg" alt="" id="testimonial1"> <strong>Pichiruchi</strong></p> 
+        <p><img src="./img/testimonial1.jpg" alt="" id="testimonial1"> <strong>Pichiruchi</strong></p> 
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum natus neque vero cumque omnis officia distinctio aliquam aspernatur tenetur? Laborum adipisci reiciendis, rerum maxime dignissimos pariatur voluptatum autem error culpa.</p><br>
         </div>
         <div class="col-md-3 col-xs-12">
           <p><img src="./img/testimonial2.jpg" alt="" id="testimonial1"> <strong>Pichiruchi</strong></p> 
-           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum natus neque vero cumque omnis officia distinctio aliquam aspernatur tenetur? Laborum adipisci reiciendis, rerum maxime dignissimos pariatur voluptatum autem error culpa.</p><br>
-         </div>
-         <div class="col-md-3 col-xs-12">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum natus neque vero cumque omnis officia distinctio aliquam aspernatur tenetur? Laborum adipisci reiciendis, rerum maxime dignissimos pariatur voluptatum autem error culpa.</p><br>
+        </div>
+        <div class="col-md-3 col-xs-12">
           <p><img src="./img/testimonial3.jpg" alt="" id="testimonial1"> <strong>Pichiruchi</strong></p> 
-           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum natus neque vero cumque omnis officia distinctio aliquam aspernatur tenetur? Laborum adipisci reiciendis, rerum maxime dignissimos pariatur voluptatum autem error culpa.</p><br>
-         </div>
-         <div class="col-md-3 col-xs-12">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum natus neque vero cumque omnis officia distinctio aliquam aspernatur tenetur? Laborum adipisci reiciendis, rerum maxime dignissimos pariatur voluptatum autem error culpa.</p><br>
+        </div>
+        <div class="col-md-3 col-xs-12">
           <p><img src="./img/testimonial4.jpg" alt="" id="testimonial1"> <strong>Pichiruchi</strong></p> 
-           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum natus neque vero cumque omnis officia distinctio aliquam aspernatur tenetur? Laborum adipisci reiciendis, rerum maxime dignissimos pariatur voluptatum autem error culpa.</p><br>
-         </div>
-         <div class="col-md-3 col-xs-12">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum natus neque vero cumque omnis officia distinctio aliquam aspernatur tenetur? Laborum adipisci reiciendis, rerum maxime dignissimos pariatur voluptatum autem error culpa.</p><br>
+        </div>
+        <div class="col-md-3 col-xs-12">
           <p><img src="./img/testimonial4.jpg" alt="" id="testimonial1"> <strong>Pichiruchi</strong></p> 
-           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum natus neque vero cumque omnis officia distinctio aliquam aspernatur tenetur? Laborum adipisci reiciendis, rerum maxime dignissimos pariatur voluptatum autem error culpa.</p><br>
-         </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum natus neque vero cumque omnis officia distinctio aliquam aspernatur tenetur? Laborum adipisci reiciendis, rerum maxime dignissimos pariatur voluptatum autem error culpa.</p><br>
+        </div>
       </div>
     </div>
     
 <div class="container" id="formulario">
-  <h2 >Envianos tu mensaje para tener mas informacion</h2>
+  <h2 id="comentario">Envianos tu mensaje para tener mas informacion</h2>
     <!-- FORMULARIO -->
       <form >
-         <div class="row">
+        <div class="row">
               <div class="col-md-6 mb-4">
               <div class="form-outline">
                 <input type="text" id="nombres" class="form-control" />
@@ -182,6 +182,7 @@
           </div>
           <div class="row">
             <div class="col-md-6 mb-4">
+              <h6 class="mb-2 pb-1">Elija el Servicio</h6>
               <select class="select" id="servicio">
                 <option value="Lavado">Lavado</option>
                 <option value="Lavado + Corte de pelo">Lavado + Corte de pelo</option>
@@ -189,30 +190,13 @@
                 <option value="Corte de Uñas">Corte de Uñas</option>
                 <option value="Otros">Otros</option>
               </select>
-              <label class="form-label select-label">Elija el Servicio</label>
             </div>       
             <div class="col-md-6 mb-4">
-            <h6 class="mb-2 pb-1">Retiro en Domicilio6</h6>
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="inlineRadioOptions"
-                id="si"
-                value="si"
-              />
-              <label class="form-check-label" for="si" style="color:black;font-size: x-large">Si</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="inlineRadioOptions"
-                id="no"
-                value="no"
-              />
-              <label class="form-check-label" for="no" style="color:black;font-size: x-large">No</label>
-            </div>
+            <h6 class="mb-2 pb-1">Retiro en Domicilio</h6>
+              <select class="select" id="retiro">
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+              </select>
             </div>
           </div>
           <div class="row">
@@ -232,13 +216,13 @@
         <div class="row">
           <div class="col-md-6">
             <div class="mt-4">
-                <button type="button" onclick="captura()">Guardar</button>
+              <button type="button" class="btn btn-warning" onclick="captura()">Guardar</button>
              </div>
           </div>
         </div>
     </form> 
     </div>
-    <div class="container-fluid" id="ubicacion">
+    <div class="container" id="ubicacion">
       <div class="row">
           <div class="col-md-6 col-xs-12">
             <h2>Te contamos donde podes Ubicarnos</h2><a name="contactanos"></a>
@@ -247,8 +231,7 @@
             <div>Argentina-BuenosAires</div> 
           </div>
           <div class="col-md-6 col-xs-12">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.237240392738!2d-58.59017343656594!3d-34.72441394526339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc5d0f543524d%3A0xc74e7404b23f57b7!2sCarlos%20Casares%204405%2C%20Gregorio%20de%20Laferrere%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1681478049147!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.237240392738!2d-58.59017343656594!3d-34.72441394526339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc5d0f543524d%3A0xc74e7404b23f57b7!2sCarlos%20Casares%204405%2C%20Gregorio%20de%20Laferrere%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1681478049147!5m2!1ses!2sar" width="200" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
 
         </div>
@@ -269,17 +252,14 @@
           <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/?lang=es" target="_blank" role="button"
             ><i class="fab fa-twitter"></i
           ></a>
-    
           <!-- Google -->
           <a class="btn btn-outline-light btn-floating m-1" href="https://google.com.ar/" target="_blank" role="button"
             ><i class="fab fa-google"></i
           ></a>
-    
           <!-- Instagram -->
           <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" target="_blank" role="button"
             ><i class="fab fa-instagram"></i
           ></a>
-    
           <!-- Linkedin -->
           <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/login/es" target="_blank" role="button"
             ><i class="fab fa-linkedin-in"></i
@@ -287,8 +267,7 @@
         </section>
         <!-- Section: Social media -->
       </div>
-    
-      <!-- Copyright -->
+          <!-- Copyright -->
       <div class="text-center p-3" style="background-color: #8c52ff;">
         © 2023 Copyright:
         <a class="text-white" href="https://mdbootstrap.com/">Mmiron</a>
@@ -300,6 +279,6 @@
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous">
     </script>
-    <script src="./app.js" async defer></script>
+    <script src="./app.js"></script>
   </body>
 </html>
