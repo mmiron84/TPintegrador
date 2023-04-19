@@ -30,10 +30,30 @@ body{
     background-repeat: no repeat;
     background-size: cover;
 } 
+.nav-item {
+  margin-bottom: 1rem;
+  padding: 0.5rem 3rem;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(146, 19, 231);
+  background-color: rgb(185, 152, 238);
+  border-style: none;
+  border-radius: 333px;
+  transition: 300ms;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+}
 .navbar{
 
     background-color:  #8c52ff !important;
 
+}
+.carousel{
+  width: 860px;
+  margin-bottom: 2rem;
+  
 }
 
 #perrofeliz{
@@ -253,6 +273,37 @@ font-style: normal;
     background: url(http://eslhiphop.com/images/fcc/quotebg.jpg) no-repeat center center fixed;
     background-size: cover;
   }
+  
+.subtitulo h4 {
+  color: #8c52ff;
+  margin: auto;
+  text-align: center;
+  padding: 2rem;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.video_container {
+  margin: auto;
+  margin-bottom: 10rem;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  text-align: center;
+  justify-content: space-around;
+  width: 95%;
+}
+.video_container .video {
+  width: 500px;
+  min-width: 300px;
+}
+.video_container .video iframe {
+  text-align: center;
+  width: 100%;
+  aspect-ratio: 2/1.5;
+}
+
   
   
   footer{
